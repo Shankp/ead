@@ -1,0 +1,95 @@
+<flex layout="column">
+  <div flex="20">
+    <md-toolbar style="background-color:#f3ffff";>
+      <div flex layout="row">
+        <div flex="90">
+          <md-tabs md-selected="selectedIndex" md-border-bottom md-autoselect>
+            <md-tab ng-click="distribution()" >
+              <p style="color: #0000AA">Distribution</p>
+              <div class="demo-tab tab{{$index%4}}" style="padding: 80px; text-align: center;">
+
+                <div ></div>
+              </div>
+
+            </md-tab>
+            <md-tab ng-click="finance()" >
+              <p style="color: #0000AA">Finance</p>
+              <div class="demo-tab tab{{$index%4}}" style="padding: 80px; text-align: center;">
+                <div >Sales</div>
+              </div>
+                 </md-tab>
+
+                    <md-tab ng-click="hr()" >
+                      <p style="color: #0000AA">Human Resources</p>
+                      <div class="demo-tab tab{{$index%4}}" style="padding: 80px; text-align: center;">
+                        <div ></div>
+                      </div>
+                         </md-tab>
+                       <md-tab ng-click="manufacture()" >
+                         <p style="color: #0000AA">Manufacture</p>
+                         <div class="demo-tab tab{{$index%4}}" style="padding: 80px; text-align: center;">
+                           <div ></div>
+                         </div>
+                            </md-tab>
+
+                      <md-tab ng-click="sales()" >
+                        <p style="color: #0000AA">Sales</p>
+                        <div class="demo-tab tab{{$index%4}}" style="padding: 80px; text-align: center;">
+                          <div ></div>
+                        </div>
+                           </md-tab>
+
+
+
+            </md-tab>
+          </md-tabs>
+          </md-content>
+        </div>
+
+        <div flex="10">
+          <md-button aria-label="Notifications" class="md-fab md-primary">
+            <md-icon md-svg-src="img/icons/ic_insert_drive_file_24px.svg" style="width: 24px; height: 24px;"></md-icon>
+
+            <md-tooltip md-visible="demo.showTooltip">
+                    Notifications
+               </md-tooltip>
+            </md-button>
+
+
+
+        </div>
+      </div>
+    </md-toolbar>
+    <!-- <md-toolbar >
+       <div flex layout="row">
+         <div flex>
+           <md-button ng-click="home">Home</md-button>
+         </div>
+         <div flex>
+           <md-button ng-click="sales">Sales</md-button>
+         </div>
+         <div flex>
+           <md-button ng-click="customers">Customers</md-button>
+         </div>
+         <div flex>
+           <md-button ng-click="reports">Reports</md-button>
+         </div>
+         <div flex>
+           <md-button ng-click="stock">Stock</md-button>
+         </div>
+         <div flex>
+           <md-button ng-click="assets">Assets</md-button>
+         </div>
+
+       </div>
+     </md-toolbar>-->
+  </div>
+
+
+
+  <div flex ui-view="main">
+
+  </div>
+
+
+
